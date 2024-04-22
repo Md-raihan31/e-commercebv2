@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can create a separate CSS file for styling -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+</head>
+<body>
+    <main class="container">
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="black" src="images/black.png" alt="">
+            <img data-image="blue" src="images/blue.png" alt="">
+            <img data-image="red" class="active" src="images/red.png" alt="">
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Headphones</span>
+                <h1>Beats EP</h1>
+                Punchy, bass-focused sound and high isolation.
+            </div>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <!-- Add more color options here -->
+                    </div>
+                </div>
+                <!-- Other product configuration options (size, quantity, etc.) can be added here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- Include your custom JavaScript file for interactivity -->
+</body>
+</html>
