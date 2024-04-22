@@ -52,4 +52,51 @@
     <!-- Include Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+    <body>
+    <main class="container">
+        <!-- Left Column / Headphones Image -->
+        <div class="row">
+            <div class="col-md-6">
+                <img data-image="black" src="images/black.png" alt="Black Headphones">
+                <img data-image="blue" src="images/blue.png" alt="Blue Headphones">
+                <img data-image="red" class="active" src="images/red.png" alt="Red Headphones">
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Headphones</span>
+                    <h1>Beats EP</h1>
+                    Punchy, bass-focused sound and high isolation.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Color</span>
+                        <div class="color-choose">
+                            <div>
+                                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                                <label for="red"><span></span> Red</label>
+                            </div>
+                            <div>
+                                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                                <label for="blue"><span></span> Blue</label>
+                            </div>
+                            <!-- Add more color options here -->
+                        </div>
+                    </div>
+                    <!-- Other product configuration options (size, quantity, etc.) can be added here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
+
